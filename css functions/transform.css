@@ -1,0 +1,14 @@
+div {
+    width: 60px;
+    height: 60px;
+    background-color: darkgrey;
+
+    transform: translate(100px, 200px) rotate(40deg) scale(2);
+
+    /*translate(): Move o elemento na tela ao longo dos eixos horizontal (X) e vertical (Y). Você pode especificar um valor para X e outro para Y (por exemplo, translate(50px, 100px)). Se apenas um valor for dado, ele se aplica ao eixo X.
+
+    rotate(): Gira o elemento no sentido horário, em torno do seu ponto central padrão, pela quantidade de graus especificada (por exemplo, rotate(45deg)). Você também pode especificar o eixo de rotação para rotações 3D (como rotateX(), rotateY() ou rotateZ()).
+
+    scale(): Altera o tamanho do elemento. Você pode especificar um fator de escala para largura e altura (por exemplo, scale(1.5, 2) para 1.5x na largura e 2x na altura). Se apenas um valor for dado, ele aplica a mesma escala tanto na largura quanto na altura (por exemplo, scale(0.5) reduz para metade do tamanho original). */
+
+}

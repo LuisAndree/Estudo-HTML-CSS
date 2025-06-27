@@ -1,0 +1,70 @@
+div {
+    width: calc(20% + 4rem);
+    height: max(calc( 50% + 10vh), min(90vh, 100px));
+    border: solid red;
+    background-color: darkgrey;
+
+    font-size: clamp(1rem, 7vw, 4rem);
+
+    /* 
+    
+
+calc(): O Calculador do CSS
+O calc() é como uma mini calculadora que você usa diretamente nas propriedades CSS. Ele permite que você misture diferentes unidades (pixels, porcentagens, em, rem, vw, vh, etc.) em uma única expressão matemática.
+
+Como funciona:
+Você pode usar as operações básicas de adição (+), subtração (-), multiplicação (*) e divisão (/).
+
+Quando usar:
+
+Ajustar espaçamentos: Por exemplo, width: calc(100% - 40px); para que um elemento tenha a largura total menos um padding fixo.
+
+Centralizar elementos: left: calc(50% - 100px); se seu elemento tiver 200px de largura.
+
+Tamanhos dinâmicos com offsets: height: calc(50vh + 2em); para uma altura que depende da viewport e de um tamanho de fonte.
+
+min(): Escolha o Menor Valor
+A função min() seleciona o menor valor entre uma lista de valores que você fornece. É ótima para garantir que um elemento não cresça demais, mesmo que o espaço disponível seja grande.
+
+Como funciona:
+Você passa vários valores (e pode usar calc() dentro deles). O CSS vai aplicar o menor valor da lista.
+
+Quando usar:
+
+Definir larguras máximas "suaves": Por exemplo, width: min(90%, 800px); faz com que o elemento ocupe no máximo 90% da largura do pai, mas nunca mais que 800px. Se 90% for menor que 800px, ele usa 90%; se for maior, ele usa 800px.
+
+Limitar tamanhos de fonte: font-size: min(5vw, 24px); para que a fonte seja responsiva ao tamanho da tela, mas nunca maior que 24px.
+
+max(): Escolha o Maior Valor
+A função max() é o oposto de min(). Ela seleciona o maior valor entre uma lista. Isso é útil para garantir que um elemento não fique pequeno demais, mesmo em telas menores.
+
+Como funciona:
+Você passa vários valores (e pode usar calc() dentro deles). O CSS vai aplicar o maior valor da lista.
+
+Quando usar:
+
+Definir larguras mínimas "suaves": Por exemplo, width: max(50%, 300px); faz com que o elemento ocupe no mínimo 50% da largura do pai, mas nunca menos que 300px. Se 50% for maior que 300px, ele usa 50%; se for menor, ele usa 300px.
+
+Garantir tamanho mínimo de fonte: font-size: max(16px, 1.2rem); para garantir que a fonte seja sempre pelo menos 16px ou 1.2rem, o que for maior.
+
+clamp(): Mantenha Dentro de um Intervalo
+A função clamp() é a mais poderosa das três, pois combina a lógica de min() e max() em uma única função. Ela permite que você defina um valor mínimo, um valor preferencial (ideal) e um valor máximo.
+
+Como funciona:
+Você passa três valores: clamp(min, ideal, max).
+
+Se o valor ideal estiver entre min e max, ele será usado.
+
+Se o valor ideal for menor que min, min será usado.
+
+Se o valor ideal for maior que max, max será usado.
+
+Quando usar:
+
+Fontes responsivas: font-size: clamp(16px, 3vw, 24px); para que a fonte seja 3% da largura da viewport, mas nunca menor que 16px e nunca maior que 24px. Isso é fantástico para tipografia fluida!
+
+Espaçamentos responsivos: padding: clamp(10px, 2vw, 30px); para um padding que se adapta ao tamanho da tela, mas com limites definidos.
+
+Larguras de elementos: width: clamp(300px, 50%, 800px); para que um elemento tenha 50% da largura do pai, mas com um mínimo de 300px e um máximo de 800px. */
+
+}

@@ -1,0 +1,64 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    border: solid red 1px;
+    margin-bottom: 30px;
+
+    
+}
+
+div:hover {
+    filter: unset;
+}
+
+.blur {
+    filter: blur(10px);  
+    /* é o borrado */
+}
+
+.brightness {
+    filter: brightness(2);
+    /* brilho */
+}
+
+.contrast {
+    filter: contrast(2);
+    /* contraste */
+}
+
+.drop-shadow {
+    filter: drop-shadow(1rem 1rem 1rem gray); 
+    /* sombra */
+    /* x, y, espalhamento, cor */
+}
+
+.opacity {
+    filter: opacity(0.4);
+    /* opacidade */
+}
+
+.invert {
+ filter: invert();
+ /* inverte as cores */
+}
+
+.hue-rotate {
+    filter: hue-rotate(200deg);
+    /* rotaciona o hue da cor */
+}
+
+.sature {
+    filter: saturate(233);
+    /* saturação */
+}
+
+.gray-scale {
+    filter: grayscale(1);
+    /* escala de cinza */
+}
+
+.sepia {
+    filter: sepia();
+    /* sepia */
+}
