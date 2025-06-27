@@ -1,0 +1,19 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    border: solid red 1px;
+    margin-bottom: 30px;
+}
+
+.rgb {
+    background-color: rgb(35, 50, 70);
+}
+
+.hsl {
+    background-color: hsla(200, 82%, 22%, 0.4);
+}
+
+.color-mix {
+    background-color: color-mix(in hsl, hsl(200, 82%, 22%), hsl(12, 84%, 43%));
+}
