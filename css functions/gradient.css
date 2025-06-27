@@ -1,0 +1,15 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    border: solid red 1px;
+    margin-bottom: 30px;
+}
+
+.linear-gradient {
+    background: linear-gradient(90deg, red 65%, blue);
+}
+
+.radial-gradient {
+    background: radial-gradient(red, blue);
+}

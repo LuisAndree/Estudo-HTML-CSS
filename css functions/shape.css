@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    border: solid red 1px;
+    margin-bottom: 30px;
+}
+
+.circle {
+    clip-path: circle();
+}
+
+.polygon {
+    clip-path: polygon(28% 41%, 70% 0%, 52% 50%, 100% 70%, 43% 75%, 30% 100%, 0% 70%, 0% 30%);
+
+    /* https://bennettfeely.com/clippy/https://bennettfeely.com/clippy/ */
+}
