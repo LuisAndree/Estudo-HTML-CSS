@@ -1,0 +1,17 @@
+:root {
+    --bg-color: rebeccapurple;
+    font-size: 62.5%;
+}
+
+@media (40em < width < 50em){
+   :root {
+    --bg-color: orangered;
+
+   }
+}
+
+body {
+     background-color: var(--bg-color);
+     color: white;
+}
+
