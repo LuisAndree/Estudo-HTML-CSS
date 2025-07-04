@@ -1,0 +1,20 @@
+.caixa {
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.linear {
+    background-color: #2ecc71; /* Verde */
+    width: 200px;
+    transition: width 1s linear;
+}
+
+.linear:hover {
+    width: 400px;
+}
