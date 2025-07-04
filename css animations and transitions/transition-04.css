@@ -1,0 +1,23 @@
+.caixa {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.atraso {
+    background-color: #f1c40f; /* Amarelo */
+    border-radius: 5px;
+
+    /* Shorthand: propriedade | duração | função | atraso */
+    transition: border-radius 0.5s ease-in 1s;
+}
+
+.atraso:hover {
+    border-radius: 50%; /* Transforma em um círculo */
+}
