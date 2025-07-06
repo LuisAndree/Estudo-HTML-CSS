@@ -1,0 +1,21 @@
+.cartao {
+    width: 250px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-family: sans-serif;
+    cursor: pointer;
+    
+    /* Estado inicial da sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Transição aplicada à sombra e à posição (transform) */
+    transition: box-shadow 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.cartao:hover {
+    /* Sombra mais forte e leve elevação para criar profundidade */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
