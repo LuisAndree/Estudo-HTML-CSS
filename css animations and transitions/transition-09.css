@@ -1,0 +1,23 @@
+body {
+    background-color: #2c3e50; /* Fundo escuro para contraste */
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.btn-fantasma {
+    background-color: transparent;
+    border: 2px solid #3498db; /* Borda azul */
+    color: #3498db; /* Texto azul */
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    /* Anima a cor de fundo e a cor do texto */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btn-fantasma:hover {
+    background-color: #3498db; /* Preenche o fundo com azul */
+    color: #ffffff; /* Texto fica branco */
+}
