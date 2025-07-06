@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.imagem-filtrada {
+    filter: grayscale(100%); /* Inicia em preto e branco */
+    transition: filter 0.8s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.imagem-filtrada:hover {
+    filter: grayscale(0%); /* Remove o filtro, revelando a cor */
+}
