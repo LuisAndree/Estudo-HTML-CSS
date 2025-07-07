@@ -1,0 +1,30 @@
+/* Animação para o cursor piscando */
+@keyframes piscar-cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #2c3e50; }
+}
+
+/* Animação que revela o texto */
+@keyframes digitar {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.container-digitacao {
+    display: inline-block; /* Garante que o container tenha a largura do texto */
+}
+
+.texto-digitado {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    white-space: nowrap; /* Impede a quebra de linha */
+    border-right: 3px solid #2c3e50; /* Simula o cursor */
+    
+    /* steps() define que a animação ocorrerá em "passos" discretos */
+    animation: 
+        digitar 4s steps(35, end) forwards, /* 35 é o número de caracteres */
+        piscar-cursor 0.75s step-end infinite;
+}
