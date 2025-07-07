@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Define a animação 'girar' */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e0e0e0; /* Círculo cinza claro */
+    border-top-color: #3498db; /* Cor da parte que vai girar */
+    border-radius: 50%;
+    
+    /* Aplica a animação */
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Faz a animação repetir para sempre */
+}
