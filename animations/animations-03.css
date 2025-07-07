@@ -1,0 +1,28 @@
+@keyframes animacao-gradiente {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.texto-animado {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 4rem;
+    
+    /* Cria um gradiente de fundo */
+    background: linear-gradient(90deg, #f36, #9c4, #29b6f6, #f36);
+    background-size: 200% auto; /* Dobro da largura para ter espaço para animar */
+    
+    /* "Corta" o fundo para que ele só apareça onde há texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Aplica a animação que move o background-position */
+    animation: animacao-gradiente 5s ease-in-out infinite;
+}
