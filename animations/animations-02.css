@@ -1,0 +1,21 @@
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(231, 76, 60, 0);
+    }
+}
+
+.ponto-notificacao {
+    width: 25px;
+    height: 25px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    
+    /* Shorthand: nome duração timing-function iteração direção */
+    animation: pulsar 1.5s ease-out infinite alternate;
+    /* 'alternate' faz a animação ir e voltar (100% -> 0%) */
+}
