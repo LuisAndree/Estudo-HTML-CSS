@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px; /* Adiciona padding para o conteúdo não ficar por baixo da barra */
+    background-color: #f0f2f5;
+}
+
+.notification-bar {
+    position: fixed; /* Position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Cor verde para notificação de sucesso */
+    color: white;
+    text-align: center;
+    padding: 15px 20px; /* Box Model */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    display: flex; /* Flexbox para alinhar texto e botão */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box; /* Inclui padding e border no width/height */
+}
+
+.notification-bar p {
+    margin: 0;
+    font-size: 1rem;
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 1; /* Ajusta a altura da linha para o 'x' */
+}
+
+.close-btn:hover {
+    color: #eee;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media Query para ajustar padding em telas menores */
+@media (max-width: 600px) {
+    .notification-bar {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    body {
+        padding-top: 45px; /* Ajusta o padding do body */
+    }
+    .close-btn {
+        font-size: 1.2rem;
+    }
+}
