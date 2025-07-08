@@ -1,0 +1,116 @@
+/* Box Model Básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Padrão para mobile */
+    max-width: 350px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 20px; /* Box Model */
+    box-sizing: border-box; /* Garante que padding não adicione ao width/height */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.product-info {
+    flex-grow: 1; /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-title {
+    font-size: clamp(1.2rem, 3vw, 1.6rem); /* CSS Function */
+    color: #333;
+    margin: 0;
+}
+
+.product-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.product-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.new-price {
+    font-size: clamp(1.3rem, 4vw, 1.8rem); /* CSS Function */
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Alinha o botão ao final usando Flexbox */
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 768px) {
+    .product-card {
+        flex-direction: row; /* Flexbox: Muda a direção para desktop */
+        max-width: 700px; /* Aumenta a largura para desktop */
+    }
+
+    .product-image {
+        width: 200px; /* Largura fixa para a imagem no desktop */
+        height: 200px;
+        flex-shrink: 0; /* Impede o encolhimento da imagem */
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-card {
+        max-width: 900px;
+        padding: 30px;
+    }
+
+    .product-image {
+        width: 250px;
+        height: 250px;
+    }
+}
