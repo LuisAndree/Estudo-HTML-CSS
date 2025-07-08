@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.card-container {
+    display: flex; /* Flexbox para organizar os cartões */
+    flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
+    gap: 25px; /* Espaço entre os cartões */
+    justify-content: center; /* Centraliza os cartões */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33% - 25px); /* Box Model + CSS Function: 3 cartões por linha, com gap */
+    min-width: 280px; /* Largura mínima para evitar que fiquem muito pequenos */
+    flex-grow: 1; /* Permite que os cartões cresçam para preencher o espaço */
+    position: relative; /* Position: Necessário para posicionar o .tag absolutamente */
+    display: flex; /* Flexbox para o conteúdo interno do cartão */
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.card-content {
+    padding: 15px; /* Box Model */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative; /* Para que o tag possa ser posicionado em relação a ele se preferir */
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.tag {
+    position: absolute; /* Position */
+    top: 10px; /* Ajuste a posição conforme necessário */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.new-tag {
+    background-color: #3498db; /* Azul */
+}
+
+.featured-tag {
+    background-color: #f39c12; /* Laranja */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cartões por linha */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* 1 cartão por linha */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-container {
+        gap: 20px;
+    }
+}
