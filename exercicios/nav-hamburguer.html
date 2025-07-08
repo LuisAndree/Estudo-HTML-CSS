@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação Responsiva</title>
+    <link rel="stylesheet" href="nav-hamburguer.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Minha Marca</a>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main class="content">
+        <h1>Bem-vindo à Página Principal</h1>
+        <p>Este é o conteúdo da sua página. Tente redimensionar a janela do navegador para ver a navegação se transformar.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </main>
+
+    <script>
+        // Pequeno script JavaScript para alternar a visibilidade do menu
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.classList.toggle('active'); // Opcional: Adiciona classe para animar o ícone
+        });
+    </script>
+</body>
+</html>
